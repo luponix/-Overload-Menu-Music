@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
-using Overload;
+﻿
 
 namespace Mod_ReplaceMenuMusic
 {
@@ -12,6 +6,7 @@ namespace Mod_ReplaceMenuMusic
     {
         public static bool mod_active = true;
         public static bool is_Music_Playing = false;
+        public static bool is_Music_Playing2 = true;
         public static string next_song = "";
         public static int current_song_int = 0;
         public static bool should_swap = false;
@@ -19,6 +14,16 @@ namespace Mod_ReplaceMenuMusic
         public static int current_song_length = 0;       
         public static int current_song_pointer = 0;
         public static bool timer_active = false;
+        public static bool song_selection_always_random = true;
+        //public static UnityAudio m_audio; // try using your own m_audio object
+
+
+        public static string[] OverloadAudioName1s =
+        {
+            "EXIT_01",
+            "EXIT_02"
+        };
+
 
         public static string[] OverloadAudioNames =
         {
@@ -56,7 +61,7 @@ namespace Mod_ReplaceMenuMusic
             "OUTER_02",
             "OUTER_BOSS"
         };
-
+        
 
 
 
